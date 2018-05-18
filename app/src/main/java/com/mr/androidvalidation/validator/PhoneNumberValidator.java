@@ -15,8 +15,7 @@ public class PhoneNumberValidator extends BaseValidator {
     }
 
     @Override
-    public Observable<DynamicFormValidationResponse<BaseComponent>>
-    validate(BaseComponent item) {
+    public Observable<DynamicFormValidationResponse<BaseComponent>> validate(BaseComponent item) {
         if (item instanceof TextInputComponent) {
             String value = ((TextInputComponent) item).getText().toString();
             if (value.isEmpty() || value.matches(PHONE_NUMBER_REGEX)) {

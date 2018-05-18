@@ -15,10 +15,10 @@ import java.util.ArrayList;
 public class MainViewModel {
 
     public final ObservableField<String> name = new ObservableField<>();
-    private final ObservableField<String> phoneNumber = new ObservableField<>();
-    private final ObservableField<String> city = new ObservableField<>();
-    private final ObservableField<String> nickname = new ObservableField<>();
-    private final ObservableField<String> nameOnBill = new ObservableField<>();
+    public final ObservableField<String> phoneNumber = new ObservableField<>();
+    public final ObservableField<String> city = new ObservableField<>();
+    public final ObservableField<String> nickname = new ObservableField<>();
+    public final ObservableField<String> nameOnBill = new ObservableField<>();
 
     public ObservableBoolean helloButtonEnabled = new ObservableBoolean(false);
 
@@ -30,6 +30,7 @@ public class MainViewModel {
 
         ValidatorDescriptor isNotEmpty = new ValidatorDescriptor(RxDynamicFormValidator.IS_NOT_EMPTY, context.getString(R.string.field_cannot_be_empty));
         return new ArrayList<DynamicFormDescriptor<?>>() {{
+
             add(DynamicFormDescriptor.getDescriptor(ComponentFactory.TEXT_INPUT, context.getString(R.string.label_first_name), name)
                     .addValidatorType(new ValidatorDescriptor(RxDynamicFormValidator.MIN_CHAR, context.getString(R.string.min_error), 2))
                     .addValidatorType(isNotEmpty)
