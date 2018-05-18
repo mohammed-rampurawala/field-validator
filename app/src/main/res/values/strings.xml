@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">android validation</string>
+    <string name="app_name">Form Validator</string>
+
+    <string name="label_first_name">Full Name</string>
+    <string name="hint_first_name">Enter employee\'s full name</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="hint_phone_number">Enter employee\'s phone number</string>
+    <string name="label_nickname">Nickname</string>
+    <string name="hint_nickname">Enter employee\'s Nickname</string>
+    <string name="label_city">City</string>
+    <string name="hint_city">Enter employee\'s City</string>
+    <string name="label_payslip">Name on Payslip (Optional)</string>
+    <string name="hint_on_payslip">Enter name on payslip (Optional)</string>
+    <!-- Form Errors-->
+    <string name="invalid_phone_number">Invalid phone number</string>
+    <string name="min_error">This field must be at least %1$s characters long</string>
+    <string name="field_cannot_be_empty">Field cannot be empty.</string>
+    <string name="congratulations">Congratulations your form is submitted.</string>
 </resources>
