@@ -3,8 +3,4 @@ Dynamic form field validator. No need to check field is filled or not when user 
 
 # Demo
 ![Alt Text](https://github.com/mohammed-rampurawala/field-validator/blob/master/demo.gif )
-<style type="text/css">
-    .classname{
-        width: 200px;
-    }
-</style>
+
